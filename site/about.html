@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>MTA-Book</title>
+	<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+	<script src="https://kit.fontawesome.com/b1d7dec166.js" crossorigin="anonymous"></script>
+
+	<script src="js/about.js"></script>
+	<script src="js/navbar.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type='text/css' href="css/sample.css">
+	<link rel="stylesheet" type='text/css' href="css/navbar.css">
+	<link rel="stylesheet" type='text/css' href="css/general.css">
+</head>
+
+<body>
+    <div id='post-container'></id>
+</body>
+
+<script>
+
+const domContainer1 = document.querySelector('#post-container');
+ReactDOM.render( React.createElement(AboutPage , null ), domContainer1);
+
+</script>
+
+
+</html>

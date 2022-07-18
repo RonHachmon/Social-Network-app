@@ -1,0 +1,122 @@
+.NavbarItems{
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-weight: bold;
+    height: 50%;
+    width: 100%;
+	display: flex;
+	font-size: 125%;
+	justify-content: center;
+	align-items: center;
+    transition: 0.5s; 
+	
+}
+.navbar-logo{
+	color: #6441a5;
+    width: 150%;
+	justify-self: start;
+    display: flex;
+	margin-left: 2%;
+	cursor: pointer;
+}
+.fa-graduation-cap{
+	margin-left:0.5rem ;
+	font: size 1.6rem; ;
+    line-height: 1.5;
+}
+
+.nav-menu{
+	display: grid;
+	grid-template-columns: repeat(5,auto);
+	grid-gap: 9px;
+	list-style: none;
+	text-align: center;
+	width: 70vw;
+	justify-content: end;
+	margin-right: 1rem;
+}
+.nav-links{
+	color: rgb(22, 3, 3);
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+}
+.nav-links:hover{
+	background-color: #61dbfb;
+	border-radius: 4px;
+	transition: all 0.2s ease-out;
+}
+.fa-bars{
+	color: black;
+}
+.menu-icon{
+	display: none;
+}
+
+
+@media screen and (max-width: 860px){
+    .NavbarItems{
+        padding-top:10px;
+        background-color: #0ba360;
+        width: 100%;
+        height: 50px;
+        position: relative;
+    }
+    .nav-menu{
+        display: flex; 
+        list-style: none;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left:-100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+
+    }
+    .nav-menu-active{
+        display: flex;
+        text-align: center; 
+        list-style: none;
+        flex-direction: column;
+        width: 100%;
+        top: 80px;
+        height: 500px;
+        position: absolute;
+        background:  linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        left: -5;
+        opacity:1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .nav-links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    .navbar-logo{    
+        position: absolute;   
+        display: flex;
+        top: 0;
+        left: 0;
+        margin-top:1% ;
+    }
+    .menu-icon{
+        display: block;
+        position:absolute ;
+        top: 0;
+        right: 0;
+        transform:translate(-100%,60%) ;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .fa-times{
+        color:black;
+        font-size: 2rem;
+
+    }
+    .fa-bars{
+        color: black;
+    }
+
+}
